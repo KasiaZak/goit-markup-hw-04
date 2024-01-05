@@ -231,7 +231,7 @@
         }
       ],
       "properties": {
-        "order": 17,
+        "order": 18,
         "id": 505,
         "name": "astronaut",
         "prevSize": 32
@@ -310,7 +310,7 @@
         }
       ],
       "properties": {
-        "order": 16,
+        "order": 19,
         "id": 504,
         "name": "diagram",
         "prevSize": 32
@@ -1484,12 +1484,17 @@
     },
     "imagePref": {
       "prefix": "icon-",
-      "png": true,
+      "png": false,
       "useClassSelector": true,
       "color": 0,
       "bgColor": 16777215,
       "classSelector": ".icon",
-      "name": "icomoon"
+      "name": "icomoon",
+      "height": 32,
+      "columns": 16,
+      "margin": 16,
+      "sprite": true,
+      "overrideSize": true
     },
     "historySize": 50,
     "showCodes": true,

@@ -173,19 +173,15 @@ body {
   color: var(--white);
   background-color: var(--ocean);
 }
-/* .icon {
+.icon {
   display: flex;
   justify-content: center;
-  width: auto;
+  align-items: center;
+  height: 112px;
   border-radius: 4px;
-  background: var(--CLOUD, #f4f4fd);
-  padding: 24px 100px;
   margin-bottom: 8px;
-} */
-.icon-wrapper {
-  display: flex;
-  width: 64px;
 }
+
 .goals-section {
   display: flex;
   padding: 120px 0;
