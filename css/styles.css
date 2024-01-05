@@ -121,6 +121,15 @@ body {
 }
 .first-section {
   background-color: var(--navy-blue);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7) 0%,
+      rgba(46, 47, 66, 0.7) 100%
+    ),
+    url(../images/people-office.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 188px 0;
 }
 
@@ -163,6 +172,19 @@ body {
 .btn-order:focus {
   color: var(--white);
   background-color: var(--ocean);
+}
+/* .icon {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  border-radius: 4px;
+  background: var(--CLOUD, #f4f4fd);
+  padding: 24px 100px;
+  margin-bottom: 8px;
+} */
+.icon-wrapper {
+  display: flex;
+  width: 64px;
 }
 .goals-section {
   display: flex;
@@ -225,6 +247,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  margin-bottom: 8px;
 }
 
 .our-team {
@@ -257,6 +280,11 @@ body {
 }
 .name-position {
   padding: 32px 0px;
+}
+.team-socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 .portfolio {
   padding-top: 96px;
