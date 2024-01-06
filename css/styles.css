@@ -1,11 +1,13 @@
 :root {
   --navy-blue: #2e2f42;
   --slate: #434455;
+  --light-slate: #8e8f99;
   --white: #ffffff;
   --cloud: #f4f4fd;
   --iris: #4d5ae5;
   --ocean: #404bbf;
   --cornflower: #e7e9fc;
+  --green: #31d0aa;
 }
 
 * {
@@ -122,15 +124,15 @@ body {
 .first-section {
   background-color: var(--navy-blue);
   background-image: linear-gradient(
-      to bottom,
       rgba(46, 47, 66, 0.7) 0%,
       rgba(46, 47, 66, 0.7) 100%
     ),
-    url(../images/people-office.png);
+    url(../images/people-office.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 188px 0;
+  max-width: 1440px;
 }
 
 .header-solutions,
@@ -177,6 +179,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--cloud);
   height: 112px;
   border-radius: 4px;
   margin-bottom: 8px;
@@ -282,6 +285,24 @@ body {
   justify-content: center;
   gap: 24px;
 }
+.team-socials-item {
+  width: 40px;
+  height: 40px;
+}
+
+.team-socials-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-socials-link:hover,
+.team-socials-link:focus {
+  background-color: var(--ocean);
+}
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -313,6 +334,8 @@ body {
   color: var(--white);
   background-color: var(--ocean);
   border: 1px solid transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .photos {
   display: flex;
@@ -323,7 +346,17 @@ body {
 .photos-list-item {
   width: calc((100% - 48px) / 3);
 }
+.photos-link {
+  display: block;
+}
 
+.photos-link:hover,
+.photos-list-item:focus,
+.photos-list-item:active {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 .description {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
@@ -358,6 +391,16 @@ body {
   background-color: var(--navy-blue);
   padding: 100px 0;
 }
+
+.container-footer {
+  display: flex;
+  align-items: baseline;
+  padding: 0 15px;
+}
+.ap {
+  margin-right: 120px;
+}
+
 .footer-logo {
   color: var(--iris);
   font-family: 'Raleway', sans-serif;
@@ -369,9 +412,73 @@ body {
   display: inline-block;
   margin-bottom: 16px;
 }
+
 .footer-paragraph {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
   max-width: 264px;
+}
+
+.socials-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.socials-footer-icon {
+  display: flex;
+  gap: 16px;
+}
+
+.socials-footer-item {
+  width: 40px;
+  height: 40px;
+}
+
+.socials-footer-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials-footer-link:hover,
+.socials-footer-link:focus {
+  background-color: var(--green);
+}
+
+.icon-svg {
+  fill: var(--cloud);
+}
+.customers-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.customers-icons-item {
+  width: calc((100%-120px) / 6);
+  height: 88px;
+}
+.customers-icons-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  fill: var(--light-slate);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+}
+
+.customers-icons-link:hover,
+.customers-icons-link:focus {
+  fill: var(--ocean);
+  border: 1px solid var(--ocean);
 }
